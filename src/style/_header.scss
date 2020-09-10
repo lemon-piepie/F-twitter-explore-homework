@@ -1,0 +1,33 @@
+.header {
+  @include heading($font-size-base);
+  font-family: $font-family-base;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: $header-margin-y;
+  padding: $header-padding-y $header-padding-x;
+  border-bottom: 1px solid $gray;
+
+  nav {
+    > ul {
+      display: flex;
+      > li {
+        > button {
+          color: $primary-color;
+          background-color: $body-bg;
+          padding: $header-button-y $header-button-x;
+          border-radius: 20px;
+          border: 1px solid $primary-color;
+        }
+        &:last-child {
+          margin-left: 5px;
+          > button {
+            color: $white;
+            background-color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+}
