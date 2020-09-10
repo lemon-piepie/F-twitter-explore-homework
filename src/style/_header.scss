@@ -14,17 +14,14 @@
       display: flex;
       > li {
         > button {
-          color: $primary-color;
-          background-color: $body-bg;
+          @extend .button-primary;
           padding: $header-button-y $header-button-x;
-          border-radius: 20px;
-          border: 1px solid $primary-color;
         }
+
         &:last-child {
           margin-left: 5px;
           > button {
-            color: $white;
-            background-color: $primary-color;
+            @include button-color($white, $primary-color);
           }
         }
       }

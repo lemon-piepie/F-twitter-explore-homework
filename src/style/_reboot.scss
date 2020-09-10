@@ -47,3 +47,9 @@ h1 {
   color: $heading-color;
   margin: 0;
 }
+
+.button-primary {
+  @include button-color($primary-color, $body-bg);
+  border-radius: 20px;
+  border: 1px solid $primary-color;
+}
