@@ -47,7 +47,7 @@ h1 {
   color: $heading-color;
   margin: 0;
 }
-
+//TODO feedback _reboot.scss文件是用来覆盖标签的默认属性或者设置标签的全局属性，我们特定的css逻辑不应该放在_reboot文件里面
 .button-primary {
   @include button-color($primary-color, $body-bg);
   border-radius: 20px;
